@@ -1,0 +1,21 @@
+{
+    "name": "weboo/strong",
+    "description": "StrongCMS",
+    "type": "project",
+    "require": {
+        "altorouter/altorouter": "~1.2",
+        "bephp/activerecord": "~2.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/controllers/",
+            "System\\": "system/"
+        },
+        "classmap": [
+            "app/models/"
+        ],
+        "files": [
+            "app/routes.php"
+        ]
+    }
+}
